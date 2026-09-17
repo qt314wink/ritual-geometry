@@ -1,0 +1,16 @@
+{
+  "name": "ritual-geometry",
+  "version": "0.1.0-draft",
+  "private": true,
+  "description": "Family-based ritual geometry authoring with inspectable draft fabrication exports.",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "validate:fixtures": "node apps/atlas/public/fixtures/gcode/generate-examples.mjs",
+    "test": "node tests/contracts.test.mjs",
+    "validate": "node apps/atlas/public/fixtures/gcode/generate-examples.mjs && node tests/contracts.test.mjs"
+  }
+}

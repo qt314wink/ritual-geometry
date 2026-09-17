@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ritual-geometry.local/schema/family.v0.json",
+  "title": "Ritual Geometry Family v0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "family_id", "version", "views", "release_state"],
+  "properties": {
+    "schema_version": {"const": "rg.family.v0"},
+    "family_id": {"type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "version": {"type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$"},
+    "release_state": {"enum": ["draft", "release", "withdrawn"]},
+    "views": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"enum": ["coloring", "stencil", "wayfinder", "layer_stack"]},
+      "uniqueItems": true
+    }
+  }
+}

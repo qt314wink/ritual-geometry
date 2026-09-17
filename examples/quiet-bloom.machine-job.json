@@ -1,0 +1,29 @@
+{
+  "schema_version": "rg.machine-job.v0",
+  "job_id": "quiet-bloom-5-layer-stack-draft",
+  "family": {
+    "family_id": "quiet-bloom",
+    "version": "0.1.0"
+  },
+  "release_state": "draft",
+  "evidence_state": "static_pass; physical_unrun",
+  "coordinate_frame": {
+    "units": "mm",
+    "mode": "absolute",
+    "jig_mm": {"width": 200, "height": 200},
+    "origin": "lower-left"
+  },
+  "material_profile": null,
+  "layers": [
+    {"sequence": 1, "layer_id": "L01_BASE", "visual_role": "twelve aperture lozenges establish the outer rhythm", "registration_points_mm": [{"x": 28, "y": 100}, {"x": 100, "y": 28}, {"x": 172, "y": 100}, {"x": 100, "y": 172}], "operation_order": ["registration", "interior", "outer_perimeter", "laser_off"]},
+    {"sequence": 2, "layer_id": "L02_CROWN", "visual_role": "six broad petals create depth behind the lattice", "registration_points_mm": [{"x": 28, "y": 100}, {"x": 100, "y": 28}, {"x": 172, "y": 100}, {"x": 100, "y": 172}], "operation_order": ["registration", "interior", "outer_perimeter", "laser_off"]},
+    {"sequence": 3, "layer_id": "L03_LATTICE", "visual_role": "twelve-point star creates the central silhouette", "registration_points_mm": [{"x": 28, "y": 100}, {"x": 100, "y": 28}, {"x": 172, "y": 100}, {"x": 100, "y": 172}], "operation_order": ["registration", "interior", "outer_perimeter", "laser_off"]},
+    {"sequence": 4, "layer_id": "L04_VESICA", "visual_role": "four vesica windows create a second visual frequency", "registration_points_mm": [{"x": 28, "y": 100}, {"x": 100, "y": 28}, {"x": 172, "y": 100}, {"x": 100, "y": 172}], "operation_order": ["registration", "interior", "outer_perimeter", "laser_off"]},
+    {"sequence": 5, "layer_id": "L05_CORE", "visual_role": "eight petals and core concentrate the top insert", "registration_points_mm": [{"x": 28, "y": 100}, {"x": 100, "y": 28}, {"x": 172, "y": 100}, {"x": 100, "y": 172}], "operation_order": ["registration", "interior", "outer_perimeter", "laser_off"]}
+  ],
+  "source": {
+    "gcode_path": "apps/atlas/public/fixtures/gcode/quiet-bloom-5-layer-stack.gcode",
+    "gcode_sha256": "ac2603927e94e9ffba79a83a281b8d6bb1455ab8e515d9209150c43fca126660",
+    "controller": "GRBL 1.1 laser mode (M4 dynamic power)"
+  }
+}

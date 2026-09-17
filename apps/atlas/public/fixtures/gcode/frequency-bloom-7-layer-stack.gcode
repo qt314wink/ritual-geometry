@@ -1,0 +1,392 @@
+(RITUAL GEOMETRY — FREQUENCY BLOOM — 7-LAYER STACK)
+(STATE: DRAFT. NOT A CALIBRATED OR RELEASED MACHINE FILE.)
+(PROFILE: GRBL 1.1 laser mode (M4 dynamic power); F1200; S350 IS ILLUSTRATIVE ONLY.)
+(JIG: millimetres; absolute; 200 × 200 mm jig; origin at lower-left)
+(SAFETY: VERIFY LASER MODE, AIR, FOCUS, ORIGIN, BOUNDARY AND MATERIAL BEFORE RESUME.)
+(EACH M0 PAUSE REQUIRES THE NAMED LAYER TO BE LOADED AGAINST THE SAME FOUR PINS.)
+G21
+G90
+G17
+G94
+M5
+M4 S0
+
+(PASS 01 — M01_01 — Rim field)
+(ROLE: visual layer bound to membrane (0,1); no interior node claimed)
+M0 (LOAD M01_01; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+(fundamental field ring)
+G0 X156 Y100
+M4 S350
+G2 X44 Y100 I-56 J0 F1200
+G2 X156 Y100 I56 J0
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 02 — M11_01 — Single-axis pair)
+(ROLE: visual layer bound to membrane (1,1))
+M0 (LOAD M11_01; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+(single-axis lobe)
+G0 X147 Y100
+M4 S350
+G2 X111 Y100 I-18 J0 F1200
+G2 X147 Y100 I18 J0
+M5
+(single-axis lobe)
+G0 X89 Y100
+M4 S350
+G2 X53 Y100 I-18 J0 F1200
+G2 X89 Y100 I18 J0
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 03 — M21_01 — Fourfold lobe ring)
+(ROLE: visual layer bound to membrane (2,1))
+M0 (LOAD M21_01; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+(fourfold lobe)
+G0 X148 Y100
+M4 S350
+G2 X120 Y100 I-14 J0 F1200
+G2 X148 Y100 I14 J0
+M5
+(fourfold lobe)
+G0 X114 Y134
+M4 S350
+G2 X86 Y134 I-14 J0 F1200
+G2 X114 Y134 I14 J0
+M5
+(fourfold lobe)
+G0 X80 Y100
+M4 S350
+G2 X52 Y100 I-14 J0 F1200
+G2 X80 Y100 I14 J0
+M5
+(fourfold lobe)
+G0 X114 Y66
+M4 S350
+G2 X86 Y66 I-14 J0 F1200
+G2 X114 Y66 I14 J0
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 04 — M01_02 — Interior silence ring)
+(ROLE: membrane (0,2) guide ring at 0.435650 × 72 mm = 31.367 mm)
+M0 (LOAD M01_02; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+((0,2) interior guide ring)
+G0 X131.367 Y100
+M4 S350
+G2 X68.633 Y100 I-31.367 J0 F1200
+G2 X131.367 Y100 I31.367 J0
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 05 — M31_01 — Sixfold spoke crown)
+(ROLE: visual layer bound to membrane (3,1))
+M0 (LOAD M31_01; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+(sixfold spoke)
+G0 X143 Y88
+M4 S350
+G1 X148 Y100 F1200
+G1 X143 Y112 F1200
+G1 X138 Y100 F1200
+G1 X143 Y88 F1200
+M5
+(sixfold spoke)
+G0 X131.892 Y131.239
+M4 S350
+G1 X124 Y141.569 F1200
+G1 X111.108 Y143.239 F1200
+G1 X119 Y132.909 F1200
+G1 X131.892 Y131.239 F1200
+M5
+(sixfold spoke)
+G0 X88.892 Y143.239
+M4 S350
+G1 X76 Y141.569 F1200
+G1 X68.108 Y131.239 F1200
+G1 X81 Y132.909 F1200
+G1 X88.892 Y143.239 F1200
+M5
+(sixfold spoke)
+G0 X57 Y112
+M4 S350
+G1 X52 Y100 F1200
+G1 X57 Y88 F1200
+G1 X62 Y100 F1200
+G1 X57 Y112 F1200
+M5
+(sixfold spoke)
+G0 X68.108 Y68.761
+M4 S350
+G1 X76 Y58.431 F1200
+G1 X88.892 Y56.761 F1200
+G1 X81 Y67.091 F1200
+G1 X68.108 Y68.761 F1200
+M5
+(sixfold spoke)
+G0 X111.108 Y56.761
+M4 S350
+G1 X124 Y58.431 F1200
+G1 X131.892 Y68.761 F1200
+G1 X119 Y67.091 F1200
+G1 X111.108 Y56.761 F1200
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 06 — M11_02 — Axis-plus-halo)
+(ROLE: visual layer bound to membrane (1,2); discrete identity, no interpolated Hz)
+M0 (LOAD M11_02; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+(halo)
+G0 X143 Y100
+M4 S350
+G2 X57 Y100 I-43 J0 F1200
+G2 X143 Y100 I43 J0
+M5
+(axis leaf)
+G0 X118 Y90
+M4 S350
+G1 X123 Y100 F1200
+G1 X118 Y110 F1200
+G1 X113 Y100 F1200
+G1 X118 Y90 F1200
+M5
+(axis leaf)
+G0 X82 Y110
+M4 S350
+G1 X77 Y100 F1200
+G1 X82 Y90 F1200
+G1 X87 Y100 F1200
+G1 X82 Y110 F1200
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+(PASS 07 — M01_03 — Twin silence rings)
+(ROLE: membrane (0,3) guide rings at 0.277896 and 0.637885 × 72 mm)
+M0 (LOAD M01_03; ALIGN ON 4 PINS; INSPECT BEFORE RESUME)
+(OPERATION ORDER: registration holes → distinct interior geometry → shared outer perimeter last)
+(registration hole)
+G0 X174 Y100
+M4 S350
+G2 X170 Y100 I-2 J0 F1200
+G2 X174 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y172
+M4 S350
+G2 X98 Y172 I-2 J0 F1200
+G2 X102 Y172 I2 J0
+M5
+(registration hole)
+G0 X30 Y100
+M4 S350
+G2 X26 Y100 I-2 J0 F1200
+G2 X30 Y100 I2 J0
+M5
+(registration hole)
+G0 X102 Y28
+M4 S350
+G2 X98 Y28 I-2 J0 F1200
+G2 X102 Y28 I2 J0
+M5
+((0,3) inner guide ring)
+G0 X120.009 Y100
+M4 S350
+G2 X79.991 Y100 I-20.009 J0 F1200
+G2 X120.009 Y100 I20.009 J0
+M5
+((0,3) outer guide ring)
+G0 X145.928 Y100
+M4 S350
+G2 X54.072 Y100 I-45.928 J0 F1200
+G2 X145.928 Y100 I45.928 J0
+M5
+(outer perimeter — cut last)
+G0 X180 Y100
+M4 S350
+G2 X20 Y100 I-80 J0 F1200
+G2 X180 Y100 I80 J0
+M5
+
+M5
+G0 X0 Y0
+M2
+(END — REMOVE ONLY AFTER LASER IS OFF)

@@ -1,0 +1,199 @@
+{
+  "package_id": "RG-GCODE-EXAMPLES-2026-09-14",
+  "validation_state": "static_pass; physical_unrun",
+  "rules": [
+    "Each file begins safe with M5, uses G21/G90/G17/G94, ends M5 then M2.",
+    "Every pass has M0 and then registration → interior → outer-perimeter ordering.",
+    "All commanded XY endpoints lie in 0..200 mm; power/feed are illustrative pending profile binding.",
+    "Matching SVG preview is generated from the same ordered shape records as GCode."
+  ],
+  "examples": [
+    {
+      "id": "quiet-bloom-5-layer-stack",
+      "title": "Quiet Bloom — 5-Layer Stack",
+      "controller": "GRBL 1.1 laser mode (M4 dynamic power)",
+      "coordinate_system": "millimetres; absolute; 200 × 200 mm jig; origin at lower-left",
+      "feed_mm_min": 1200,
+      "power_s": 350,
+      "material_profile": null,
+      "release_state": "draft",
+      "pass_count": 5,
+      "gcode_file": "quiet-bloom-5-layer-stack.gcode",
+      "preview_file": "quiet-bloom-5-layer-stack-preview.svg",
+      "gcode_sha256": "ac2603927e94e9ffba79a83a281b8d6bb1455ab8e515d9209150c43fca126660",
+      "physics_note": null,
+      "passes": [
+        {
+          "sequence": 1,
+          "id": "L01_BASE",
+          "name": "Aperture lattice",
+          "visual_role": "structural base; twelve open lozenges establish the outer rhythm",
+          "shape_count": 17,
+          "notes": null
+        },
+        {
+          "sequence": 2,
+          "id": "L02_CROWN",
+          "name": "Six-petal crown",
+          "visual_role": "broad petal field creates depth behind the lattice",
+          "shape_count": 11,
+          "notes": null
+        },
+        {
+          "sequence": 3,
+          "id": "L03_LATTICE",
+          "name": "Twelve-point star window",
+          "visual_role": "single continuous interior cut gives a crisp middle silhouette",
+          "shape_count": 6,
+          "notes": null
+        },
+        {
+          "sequence": 4,
+          "id": "L04_VESICA",
+          "name": "Four vesica windows",
+          "visual_role": "large diagonal lenses provide a second visual frequency",
+          "shape_count": 9,
+          "notes": null
+        },
+        {
+          "sequence": 5,
+          "id": "L05_CORE",
+          "name": "Eight-petal core",
+          "visual_role": "compact top insert concentrates the finished composition",
+          "shape_count": 14,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "frequency-bloom-7-layer-stack",
+      "title": "Frequency Bloom — 7-Layer Stack",
+      "controller": "GRBL 1.1 laser mode (M4 dynamic power)",
+      "coordinate_system": "millimetres; absolute; 200 × 200 mm jig; origin at lower-left",
+      "feed_mm_min": 1200,
+      "power_s": 350,
+      "material_profile": null,
+      "release_state": "draft",
+      "pass_count": 7,
+      "gcode_file": "frequency-bloom-7-layer-stack.gcode",
+      "preview_file": "frequency-bloom-7-layer-stack-preview.svg",
+      "gcode_sha256": "1ce66c8bc44076a27f9837dcd0cd4ac2a384cb66e1f5266bd1dbbb8adb54f642",
+      "physics_note": "The pass labels preserve the supplied discrete membrane sequence. The cut shapes are a layered visual composition, not a measured vibrating-body experiment.",
+      "passes": [
+        {
+          "sequence": 1,
+          "id": "M01_01",
+          "name": "Rim field",
+          "visual_role": "visual layer bound to membrane (0,1); no interior node claimed",
+          "shape_count": 6,
+          "notes": null
+        },
+        {
+          "sequence": 2,
+          "id": "M11_01",
+          "name": "Single-axis pair",
+          "visual_role": "visual layer bound to membrane (1,1)",
+          "shape_count": 7,
+          "notes": null
+        },
+        {
+          "sequence": 3,
+          "id": "M21_01",
+          "name": "Fourfold lobe ring",
+          "visual_role": "visual layer bound to membrane (2,1)",
+          "shape_count": 9,
+          "notes": null
+        },
+        {
+          "sequence": 4,
+          "id": "M01_02",
+          "name": "Interior silence ring",
+          "visual_role": "membrane (0,2) guide ring at 0.435650 × 72 mm = 31.367 mm",
+          "shape_count": 6,
+          "notes": null
+        },
+        {
+          "sequence": 5,
+          "id": "M31_01",
+          "name": "Sixfold spoke crown",
+          "visual_role": "visual layer bound to membrane (3,1)",
+          "shape_count": 11,
+          "notes": null
+        },
+        {
+          "sequence": 6,
+          "id": "M11_02",
+          "name": "Axis-plus-halo",
+          "visual_role": "visual layer bound to membrane (1,2); discrete identity, no interpolated Hz",
+          "shape_count": 8,
+          "notes": null
+        },
+        {
+          "sequence": 7,
+          "id": "M01_03",
+          "name": "Twin silence rings",
+          "visual_role": "membrane (0,3) guide rings at 0.277896 and 0.637885 × 72 mm",
+          "shape_count": 7,
+          "notes": null
+        }
+      ]
+    },
+    {
+      "id": "leaf-spiral-5-layer-stack",
+      "title": "Leaf Spiral — 5-Layer Stack",
+      "controller": "GRBL 1.1 laser mode (M4 dynamic power)",
+      "coordinate_system": "millimetres; absolute; 200 × 200 mm jig; origin at lower-left",
+      "feed_mm_min": 1200,
+      "power_s": 350,
+      "material_profile": null,
+      "release_state": "draft",
+      "pass_count": 5,
+      "gcode_file": "leaf-spiral-5-layer-stack.gcode",
+      "preview_file": "leaf-spiral-5-layer-stack-preview.svg",
+      "gcode_sha256": "ef6bfa169964bb2bd59d1857f17a3301c9c59f8fda6f108d0c4ba4cf40b4b219",
+      "physics_note": null,
+      "passes": [
+        {
+          "sequence": 1,
+          "id": "L01_SEED",
+          "name": "Seven seed apertures",
+          "visual_role": "sparse circular seed field, lower layer",
+          "shape_count": 12,
+          "notes": null
+        },
+        {
+          "sequence": 2,
+          "id": "L02_DIAMOND",
+          "name": "Ten diamond modules",
+          "visual_role": "rotated diamond modules reveal a second density",
+          "shape_count": 15,
+          "notes": null
+        },
+        {
+          "sequence": 3,
+          "id": "L03_TRIANGLE",
+          "name": "Fourteen triangular leaves",
+          "visual_role": "triangular leaf field changes silhouette without repeating the base",
+          "shape_count": 19,
+          "notes": null
+        },
+        {
+          "sequence": 4,
+          "id": "L04_DENSE",
+          "name": "Eighteen diamond leaves",
+          "visual_role": "denser rotated modules provide intermediate depth",
+          "shape_count": 23,
+          "notes": null
+        },
+        {
+          "sequence": 5,
+          "id": "L05_POLLEN",
+          "name": "Twenty-four pollen apertures",
+          "visual_role": "small top-layer aperture field completes the spiral",
+          "shape_count": 29,
+          "notes": null
+        }
+      ]
+    }
+  ]
+}
