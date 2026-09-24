@@ -1,0 +1,17 @@
+{
+  "schema_version": "rg.machine-job-fixture-index.v0",
+  "generated_from": "examples/*.machine-job.json",
+  "jobs": [
+    {
+      "program_id": "quiet-bloom-5-layer-stack",
+      "machine_job_file": "quiet-bloom.machine-job.json",
+      "job_id": "quiet-bloom-5-layer-stack-draft",
+      "family": {
+        "family_id": "quiet-bloom",
+        "version": "0.1.0"
+      },
+      "release_state": "draft",
+      "evidence_state": "static_pass; physical_unrun"
+    }
+  ]
+}

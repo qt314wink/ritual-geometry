@@ -10,7 +10,10 @@
   "scripts": {
     "start": "node scripts/serve.mjs",
     "validate:fixtures": "node apps/atlas/public/fixtures/gcode/generate-examples.mjs",
+    "build:proof": "node scripts/build-machine-job-fixtures.mjs",
+    "preflight:ops": "node scripts/operating-preflight.mjs",
+    "pulse": "node scripts/project-pulse.mjs",
     "test": "node tests/contracts.test.mjs",
-    "validate": "node apps/atlas/public/fixtures/gcode/generate-examples.mjs && node tests/contracts.test.mjs"
+    "validate": "node apps/atlas/public/fixtures/gcode/generate-examples.mjs && node scripts/build-machine-job-fixtures.mjs && node tests/contracts.test.mjs"
   }
 }

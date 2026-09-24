@@ -1,0 +1,167 @@
+{
+  "schema_version": "rg.operating-plan.v0",
+  "plan_id": "RG-OPS-2026-09-20",
+  "status": "proposed; human_review_required",
+  "north_star": "A person can desire, understand, and responsibly act on a layered geometric artifact without being asked to trust an opaque system.",
+  "product_thesis": "Proof-led studio commerce: sell a named, explainable layer-stack experience first; accumulate reusable provenance and handoff infrastructure underneath it.",
+  "current_evidence": [
+    "Three draft GCode fixtures with ordered distinct layers, matching SVG previews, manifest hashes, and static validation.",
+    "Quiet Bloom has a local browser Proof Rail that validates a served MachineJob against selected source data.",
+    "No physical material/profile/controller result, customer validation, checkout, ad result, or deployment evidence is present."
+  ],
+  "reconciliation_flags": [
+    {
+      "id": "RG-ARCH-01",
+      "severity": "blocking_for_release_workflow",
+      "observed_mismatch": "The decision package names draft -> advisory -> release, while Family and MachineJob schemas allow draft | release | withdrawn.",
+      "safe_current_behavior": "Use draft plus the specific evidence state static_pass; physical_unrun.",
+      "required_decision": ["canonical state vocabulary", "allowed transitions", "meaning of advisory if retained", "withdrawn handling", "schema version/migration rule", "tests and public copy changes"],
+      "never": "Add advisory to one UI, schema, or copy surface without a versioned compatibility decision."
+    }
+  ],
+  "non_negotiables": [
+    "Keep Ritual Geometry as the owner of authored family identity, views, and display provenance; Omni-Loom is a future MachineJob consumer.",
+    "A model may propose intent; only a validated emitter may create a machine artifact.",
+    "Missing evidence is represented as unknown, draft, blocked, or physical_unrun; it is never polished into a pass.",
+    "No automatic system may commit, publish, spend, message, alter release state, or rewrite source truth without human authorization.",
+    "No public promise of universal cut-readiness, controller safety, material calibration, measured physics, or physical assembly before its evidence exists."
+  ],
+  "priority_formula": {
+    "proof_revenue_leverage": 0.3,
+    "user_clarity": 0.25,
+    "reusable_system_value": 0.2,
+    "reversibility": 0.15,
+    "effort_inverse": 0.1,
+    "note": "Scores are hypotheses used to sequence work, not validated market measurements."
+  },
+  "work_orders": [
+    {
+      "id": "RG-00",
+      "title": "Reconcile the local Proof Rail increment and release vocabulary",
+      "priority_score": 98,
+      "state": "awaiting_review_and_authorization",
+      "intention": "Ensure the source of public work matches the verified local proof implementation and that release language has one deliberate compatibility rule before new work treats either as settled.",
+      "inputs": ["current local diff", "current branch/SHA", "fixture validation", "release-vocabulary decision", "user authorization to commit and push"],
+      "outputs": ["reviewed commit", "pushed SHA", "remote verification receipt", "versioned release-state compatibility decision"],
+      "definition_of_done": ["only scoped changes are committed", "fixture and contract tests pass", "remote head equals expected commit", "README and handoff state are accurate", "advisory/withdrawn behavior is explicit across affected contracts"],
+      "stop_rules": ["unrelated dirty changes", "failed validation", "missing user authorization", "remote mismatch", "silent release-state mismatch"],
+      "unlocks": ["trustworthy public demo baseline", "safe collaboration from remote"]
+    },
+    {
+      "id": "RG-01",
+      "title": "Build the Field Kit offer and discovery page",
+      "priority_score": 95,
+      "state": "ready",
+      "intention": "Give one buyer a single clear reason to care, understand the layered object, inspect honest proof, and express bounded interest.",
+      "audience": "design-forward maker or art director with access to printing, a laser, a workshop, or a fabrication collaborator",
+      "inputs": ["accepted renderer visual language", "Quiet Bloom family assets", "offer copy", "rights/delivery boundary", "event vocabulary"],
+      "outputs": ["one local responsive conversion page", "one primary CTA", "Field Kit contents/spec", "event contract", "static fallback for motion"],
+      "definition_of_done": ["the visitor can describe the object and offer after one pass", "all visible actions work locally", "proof rail remains an inspection path", "no payment/account/physical-result claim is implied", "mobile and desktop browser checks pass"],
+      "stop_rules": ["feature-inventory landing page", "requires payment or analytics integration to demonstrate value", "ambiguous delivery/rights promise", "decorative motion hides the assembly explanation"],
+      "unlocks": ["creative testing", "qualified brief capture", "workshop and commission inquiry language"]
+    },
+    {
+      "id": "RG-02",
+      "title": "Complete structural proof coverage for all three fixture families",
+      "priority_score": 90,
+      "state": "ready",
+      "intention": "Make the renderer's proof behavior consistent and fail-closed across Quiet Bloom, Frequency Bloom, and Leaf Spiral.",
+      "inputs": ["canonical MachineJobs", "manifest pass IDs", "source hashes", "registration choreography"],
+      "outputs": ["two MachineJob source records", "two public fixture copies", "expanded proof index", "positive and negative test fixtures"],
+      "definition_of_done": ["each family can show its own actual contract-to-source proof", "mismatched IDs/hashes visibly withhold a positive result", "all fixtures stay draft/physical_unrun"],
+      "stop_rules": ["copied data disagrees with source", "proof is represented by hard-coded UI", "any release language is introduced"],
+      "unlocks": ["offer-page comparison", "three-family catalogue", "future backend consumer fixtures"]
+    },
+    {
+      "id": "RG-03",
+      "title": "Seed a local evidence-ledger knowledge graph",
+      "priority_score": 86,
+      "state": "ready",
+      "intention": "Make decisions, sources, claims, offers, tests, assets, and blockers queryable without granting an LLM authority over truth.",
+      "inputs": ["source register", "decision package", "work-order plan", "fixture manifests", "release/evidence records"],
+      "outputs": ["versioned JSON record corpus", "edge vocabulary", "deterministic audit/report", "candidate-insight review queue"],
+      "definition_of_done": ["at least 25 stable-ID records", "every claim has a state and source pointer", "audit reports unknown/stale/blocked relationships", "no automatic mutation or network submission"],
+      "stop_rules": ["AI-generated relation without evidence pointer", "graph is used as source authority", "cloud/API credential is required for baseline function"],
+      "unlocks": ["agent handoffs", "ambient pulse candidates", "controlled GraphRAG evaluation later"]
+    },
+    {
+      "id": "RG-04",
+      "title": "Produce the signature exploded-stack motion system",
+      "priority_score": 79,
+      "state": "blocked_on_selected_visual_target",
+      "intention": "Teach layer contribution and registration through a premium, reusable motion language.",
+      "inputs": ["selected visual direction", "layer metadata", "motion/copy storyboard", "reduced-motion contract"],
+      "outputs": ["desktop/mobile component", "three export crops", "static fallback", "motion specification"],
+      "definition_of_done": ["each layer receives a distinct visual beat", "final assembly is readable without sound", "motion never implies unobserved physical behavior", "performance and reduced-motion checks pass"],
+      "stop_rules": ["motion becomes a generic shader demo", "visual accuracy requires unvalidated material behavior", "the offer page is delayed"],
+      "unlocks": ["organic creative assets", "hero interaction", "later Unity/Unreal interpretation"]
+    },
+    {
+      "id": "RG-05",
+      "title": "Prepare paid-discovery and partner outreach kit",
+      "priority_score": 74,
+      "state": "blocked_on_RG-01",
+      "intention": "Turn interest into learning with bounded creative variants, an interview guide, and a spending/claim boundary.",
+      "inputs": ["working landing destination", "three motion/still creatives", "event contract", "approved audience and spend ceiling"],
+      "outputs": ["creative matrix", "partner one-sheet", "interview guide", "manual experiment tracker", "review checklist"],
+      "definition_of_done": ["every creative tests one stated hypothesis", "all links resolve to one destination", "metrics distinguish click from qualified interest", "nothing is published or spent automatically"],
+      "stop_rules": ["no learning question", "no approved budget", "no owner of review", "creative claims unsupported physical capability"],
+      "unlocks": ["small paid test", "partner conversations", "offer refinement"]
+    },
+    {
+      "id": "RG-06",
+      "title": "Run the first physical evidence bench",
+      "priority_score": 97,
+      "state": "blocked_on_machine_material_operator",
+      "intention": "Convert one draft family from simulated structural proof toward observed material-specific evidence.",
+      "inputs": ["identified operator", "machine/controller", "material and thickness", "dated profile", "safety procedure", "test plan"],
+      "outputs": ["calibration record", "overlay/registration measurements", "photos", "evidence record", "release decision or blocker list"],
+      "definition_of_done": ["records name the machine/material/profile/date/operator", "measurements and exceptions are preserved", "result remains draft/advisory unless release gate is genuinely met"],
+      "stop_rules": ["missing machine context", "unsafe/unreviewed procedure", "attempt to infer result from browser preview"],
+      "unlocks": ["honest physical case study", "material-specific companion offer", "validated Omni-Loom handoff discussions"]
+    }
+  ],
+  "candidate_agent_skills": [
+    {
+      "id": "evidence-stack-auditor",
+      "purpose": "Check a Family, MachineJob, manifest, source hash, evidence state, and public copy for unsupported promotion.",
+      "input": "versioned local records only",
+      "output": "pass/fail/unknown report with exact source pointers",
+      "never": "silently repair a mismatch or promote physical status"
+    },
+    {
+      "id": "offer-experiment-conductor",
+      "purpose": "Convert an approved offer hypothesis into a landing-page brief, creative matrix, event schema, and stop criteria.",
+      "input": "one named audience, offer, and boundary",
+      "output": "review-ready experiment packet",
+      "never": "publish ads, spend, message prospects, or invent conversion evidence"
+    },
+    {
+      "id": "relationship-garden-curator",
+      "purpose": "Normalize project records and surface stale/unknown/blocked links as candidate insights.",
+      "input": "source-backed ledger records",
+      "output": "candidate-insight queue and graph-health report",
+      "never": "treat an inferred relationship as source truth or mutate records automatically"
+    },
+    {
+      "id": "motion-proof-director",
+      "purpose": "Turn layer metadata into a motion storyboard with accessibility and evidence constraints.",
+      "input": "layer order, visual roles, intended audience, visual source",
+      "output": "shot list, timing spec, static fallback, implementation test plan",
+      "never": "use motion to imply vibration, physical simulation, or fabrication proof"
+    },
+    {
+      "id": "machinejob-adapter-verifier",
+      "purpose": "Validate a backend adapter's declared transformations and reject undocumented unit/path/machine changes.",
+      "input": "MachineJob, adapter declaration, fixture corpus",
+      "output": "compatibility report and violations",
+      "never": "emit release artifacts without material, machine, and evidence gates"
+    }
+  ],
+  "ambient_pulse": {
+    "mode": "read_only_candidate_generation",
+    "signals": ["stale hash", "missing source", "missing prerequisite", "orphan offer", "unsupported claim", "reopen_if condition", "blocked work order"],
+    "human_actions": ["promote", "dismiss", "reopen", "assign"],
+    "forbidden_actions": ["write source truth", "change release state", "commit", "push", "deploy", "send", "spend", "create accounts"]
+  }
+}
